@@ -54,3 +54,18 @@
   color: black;
   font-size: larger;
 }
+
+.sticky-div {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  padding: 10px 0px;
+}
+
+.start {
+  height: 100px;
+}
+
+.end {
+  height: 5000px;
+}

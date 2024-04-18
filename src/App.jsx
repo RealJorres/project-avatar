@@ -33,7 +33,7 @@ function App() {
   return (
     <>
     <div class="container">
-      <div className="row">
+      <div className="row sticky-div">
         <div className="twelve">
           <h1>Avatars Codex</h1>
           <input 
