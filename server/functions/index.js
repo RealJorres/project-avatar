@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import Chance from "chance"
 
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -19,7 +20,7 @@ const users = [...Array(250).keys()].map((id)=>{
     };
 });
 
-app.get("/api/users", (req, res)=>{
+app.get("./netlify/api", (req, res)=>{
     const q = req.query.q?.toLocaleLowerCase() || '';
     const results = users.filter((user)=>user.name.toLowerCase().includes(q));
 
