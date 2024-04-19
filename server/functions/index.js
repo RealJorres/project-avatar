@@ -1,9 +1,14 @@
 import express from "express"
 import cors from "cors"
 import Chance from "chance"
+import serverless from "serverless-http"
+
+
+
 
 
 const app = express();
+const handler = serverless(app);
 app.use(cors());
 app.use(express.json());
 
