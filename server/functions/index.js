@@ -25,7 +25,7 @@ const users = [...Array(250).keys()].map((id)=>{
     };
 });
 
-app.get("./netlify/api", (req, res)=>{
+app.get("./netlify/api/users", (req, res)=>{
     const q = req.query.q?.toLocaleLowerCase() || '';
     const results = users.filter((user)=>user.name.toLowerCase().includes(q));
 
