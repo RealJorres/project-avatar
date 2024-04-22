@@ -14,7 +14,7 @@ function userSearch(){
 
   const search = async (q) =>{
     const response = await fetch(
-      `./netlify/api/users?` + new URLSearchParams({q})
+      `https://project-avatar-api.netlify.app/.netlify/functions/api?` + new URLSearchParams({q})
     );
 
     const data = await response.json();
