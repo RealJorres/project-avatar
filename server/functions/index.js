@@ -8,7 +8,7 @@ import serverless from "serverless-http"
 
 
 const app = express();
-const handler = serverless(app);
+module.exports.handler = serverless(app);
 app.use(cors());
 app.use(express.json());
 
