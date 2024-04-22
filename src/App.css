@@ -69,3 +69,12 @@
 .end {
   height: 5000px;
 }
+
+.twelve a{
+  text-decoration: none;
+  color: black;
+}
+
+.twelve a:hover{
+  color: rgb(53, 53, 53);
+}

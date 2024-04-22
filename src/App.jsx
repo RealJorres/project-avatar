@@ -35,7 +35,7 @@ function App() {
     <div class="container">
       <div className="row sticky-div">
         <div className="twelve">
-          <h1>Avatars Codex</h1>
+          <a href="https://relatorres-avatar-codex.netlify.app/"><h1>Avatars Codex</h1></a>
           <input 
             type="text"
             placeholder='Search...'
